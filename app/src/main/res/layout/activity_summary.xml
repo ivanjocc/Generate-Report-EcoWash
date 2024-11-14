@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".SummaryActivity">
+
+    <!-- Título de Resumen -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resumen de la Venta"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingBottom="16dp"
+        android:layout_gravity="center" />
+
+    <!-- Fecha -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha de Venta:"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+    <TextView
+        android:id="@+id/txt_fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp" />
+
+    <!-- Total Vendido -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Vendido:"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+    <TextView
+        android:id="@+id/txt_valor_bruto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp" />
+
+    <!-- Porcentaje de Trabajadores -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Porcentaje de Trabajadores:"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+    <TextView
+        android:id="@+id/txt_porcentaje_trabajadores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Descuento de Trabajadores -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descuento Trabajadores:"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+    <TextView
+        android:id="@+id/txt_valor_trabajadores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Grafitos -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grafitos:"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+    <TextView
+        android:id="@+id/txt_grafitos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Transferencias -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor Transferencias:"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+    <TextView
+        android:id="@+id/txt_transferencias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Total Egresos -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Egresos:"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+    <TextView
+        android:id="@+id/txt_total_egresos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Total Final -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Final:"
+        android:textStyle="bold"
+        android:textColor="#FF0000"
+        android:layout_marginTop="16dp" />
+    <TextView
+        android:id="@+id/txt_total_final"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#FF0000"
+        android:paddingBottom="16dp" />
+
+</LinearLayout>

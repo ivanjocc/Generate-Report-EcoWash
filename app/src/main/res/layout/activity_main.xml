@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Campo de Fecha -->
+        <EditText
+            android:id="@+id/input_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Seleccionar Fecha"
+            android:focusable="false"
+            android:inputType="date" />
+
+        <!-- Campo de Valor Bruto -->
+        <EditText
+            android:id="@+id/input_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Valor Bruto de la Venta"
+            android:inputType="numberDecimal" />
+
+        <!-- Campo de Grafitos -->
+        <EditText
+            android:id="@+id/input_grafitos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Grafitos"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/input_transferencias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Transferencias"
+            android:inputType="numberDecimal" />
+
+        <!-- Checkbox para Día Festivo -->
+        <CheckBox
+            android:id="@+id/checkbox_holiday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Día Festivo" />
+
+        <!-- Sección para Egresos -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Egresos"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp" />
+
+        <!-- Contenedor Dinámico para los Egresos -->
+        <LinearLayout
+            android:id="@+id/egresos_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <!-- Botón para Agregar Nuevo Egreso -->
+        <Button
+            android:id="@+id/btn_add_egreso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar Egreso"
+            android:layout_marginTop="10dp" />
+
+        <!-- Botón para Calcular y Ver Resumen -->
+        <Button
+            android:id="@+id/btn_calculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular y Ver Resumen"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+
+</ScrollView>
